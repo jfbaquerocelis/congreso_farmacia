@@ -1,0 +1,98 @@
+@font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot?-iht9o3");src:url("../fonts/icomoon.eot?#iefix-iht9o3") format('embedded-opentype'),url("../fonts/icomoon.woff?-iht9o3") format('woff'),url("../fonts/icomoon.ttf?-iht9o3") format('truetype'),url("../fonts/icomoon.svg?-iht9o3#icomoon") format('svg');font-weight:normal;font-style:normal}
+.link-active{background:#f00}
+body{font-family:'Droid Serif';color:#333;font-size:16px;background-image:url("../img/cordoba.png");-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;background-attachment:fixed}
+.overlay{display:none;position:fixed;background:#000;opacity:.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);width:100vw;height:100vh;z-index:2}
+.Header{color:#09126d;width:80%;margin:0 auto;position:relative}
+.Header-contentText{width:50%;padding:2.5em 0}
+.Header-iii{text-shadow:1px 1px 2px #666;font-size:10em;margin:0}
+.Header-congress{text-shadow:1px 1px 2px #666;vertical-align:middle;font-size:.4em}
+.Header-rest{font-size:2em;text-shadow:1px 1px 2px #666;display:block;text-align:center;margin:-1em 0}
+.Header-subtitle{text-align:center;margin:2em 0 0 0}
+.Header-info{margin:0;text-align:center;text-shadow:1px 1px 2px #666;font-size:.9em}
+.Menu{font-family:'Open Sans';display:inline-block;position:absolute;padding:0 0 0 2em;font-size:1.05em;-webkit-border-radius:0 0 0 3em;border-radius:0 0 0 3em;background:#ffcdd2;border-bottom:2px solid #eebcc1;right:0}
+.Menu-list{margin:0;padding:0}
+.Menu-listItem{display:inline-block}
+.Menu-linkItem{text-decoration:none;color:#333;font-weight:bold;padding:.8em .5em;display:inline-block;-o-transition:0.2s all ease;-ms-transition:0.2s all ease;-webkit-transition:0.2s all ease;-moz-transition:0.2s all ease;transition:0.2s all ease;border-top:5px solid transparent;}
+.Menu-linkItem:hover{border-top:5px solid #ef5350;color:#ef5350;text-decoration:none}
+.Congress,.Humax,.Speaker,.Contact,.Hotel{width:80%;margin:0 auto;background:#fff;-webkit-box-shadow:1px 2px 5px rgba(0,0,0,0.5);box-shadow:1px 2px 5px rgba(0,0,0,0.5);padding:1em 0}
+.Congress-article,.Congress-articleCal,.Contact-article{width:80%;margin:0 auto;line-height:1.5em}
+.Humax-article{display:none}
+.Congress-description a,.Humax-description a{color:#09126d;}
+.Congress-description a:hover,.Humax-description a:hover{color:#00008b}
+.Congress-hide{display:none;font-style:italic;color:#ef5350;cursor:pointer;}
+.Congress-hide:hover{text-decoration:underline}
+.Congress-more{font-style:italic;color:#ef5350;font-size:1.1em;cursor:pointer;}
+.Congress-more:hover{text-decoration:underline}
+.Congress-showMore{display:none}
+.Congress-listButton{margin:0;padding:0;text-align:center}
+.Congress-listItem{display:inline-block}
+.Congress-linkItem{padding:.5em 1em;color:#333;display:block;margin:1em 0;}
+.Congress-linkItem:hover{text-decoration:none}
+.calendar,.place,.price{margin:.5em;cursor:pointer;font-size:2em;-o-transition:0.3s all ease;-ms-transition:0.3s all ease;-webkit-transition:0.3s all ease;-moz-transition:0.3s all ease;transition:0.3s all ease}
+.calendar:hover{-o-transform:rotate(-10deg);-ms-transform:rotate(-10deg);-webkit-transform:rotate(-10deg);-moz-transform:rotate(-10deg);transform:rotate(-10deg);color:#ef5350}
+.calendar:hover ~ p{color:#ef5350}
+.place:hover{-o-transform:rotate(-10deg);-ms-transform:rotate(-10deg);-webkit-transform:rotate(-10deg);-moz-transform:rotate(-10deg);transform:rotate(-10deg);color:#ef6c00}
+.place:hover ~ p{color:#ef6c00}
+.price:hover{-o-transform:rotate(-10deg);-ms-transform:rotate(-10deg);-webkit-transform:rotate(-10deg);-moz-transform:rotate(-10deg);transform:rotate(-10deg);color:#43a047}
+.price:hover ~ p{color:#43a047}
+.calendar:before{font-size:2em;font-family:'icomoon';content:"\e953";margin:0 .2em}
+.place:before{font-size:2em;margin:0 .2em;font-family:'icomoon';content:"\e948"}
+.price:before{font-size:2em;margin:0 .2em;font-family:'icomoon';content:"\e93b"}
+.pencil{font-size:3.5em;-o-transition:0.3s all ease;-ms-transition:0.3s all ease;-webkit-transition:0.3s all ease;-moz-transition:0.3s all ease;transition:0.3s all ease;}
+.pencil:hover{-o-transform:rotate(10deg);-ms-transform:rotate(10deg);-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);transform:rotate(10deg);color:#ffd600}
+.pencil:hover ~ p{color:#ffd600}
+.hotel{font-size:3.5em;-o-transition:0.3s all ease;-ms-transition:0.3s all ease;-webkit-transition:0.3s all ease;-moz-transition:0.3s all ease;transition:0.3s all ease;}
+.hotel:hover{-o-transform:rotate(-10deg);-ms-transform:rotate(-10deg);-webkit-transform:rotate(-10deg);-moz-transform:rotate(-10deg);transform:rotate(-10deg)}
+#calendar,#place,#price,#pencil{display:none}
+.Congress-calendar,.Congress-price{font-size:.9em;font-family:'Open Sans'}
+.Congress-price{width:50%;margin:0 auto}
+.Congress-calendarHeader th,.Congress-priceHeader th{text-align:center;font-size:1.1em;background:#74c6fe;color:#fff;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;transition:0.5s all ease}
+.Congress-calendar th:nth-child(1),.Congress-calendar th:nth-child(2){width:20%}
+.Congress-calendar td,.Congress-price td{text-align:center}
+.Congress-calendarHeader:hover th{cursor:pointer;background:#52a4dc}
+.Congress-calendar tbody{display:none}
+.Congress-back{color:#ef5350;}
+.Congress-back:hover{cursor:pointer;text-decoration:underline}
+.Humax-contentLogo{margin:1em 0;text-align:center;width:100%}
+.Humax-logo{width:22em}
+.Humax-contentImg{text-align:center;position:relative;cursor:pointer;margin:1em 0;}
+.Humax-contentImg:hover .Humax-overlayImg{display:block}
+.Humax-img{width:20em}
+.Humax-menuLeft{font-family:'Open Sans';background:#eee;-webkit-box-shadow:1px 1px 5px #666;box-shadow:1px 1px 5px #666;margin:0 .5em}
+.Humax-list{padding:1em;list-style:none}
+.Humax-linkItem{color:#333;margin:.2em 0;display:block;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;transition:0.5s all ease;}
+.Humax-linkItem:hover{margin-left:.5em;color:#ef5350}
+ol li{margin:1em 0}
+.Hotel-message{font-size:.9em;margin:0 auto 1em;width:50%;border:1px solid #666;text-align:center;padding:.5em}
+.Hotel-list{margin:0;font-family:'Open Sans'}
+.Hotel-listItem{cursor:pointer;display:inline-block;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;transition:0.5s all ease;}
+.Hotel-listItem:hover{text-decoration:underline;color:#ef5350}
+.Hotel-article{display:none;-webkit-box-shadow:1px 1px 5px #666;box-shadow:1px 1px 5px #666;width:90%;padding:0 1em 1em;margin:1.5em auto}
+.Hotel-name{padding-bottom:.2em;border-bottom:2px solid #eee;text-align:center}
+.Hotel-contentBanner{margin:0;width:100%}
+.Hotel-banner{width:100%}
+.Speaker{position:relative}
+.Speaker-contentArticle{font-family:'Open Sans';width:90%;margin:0 auto}
+.Speaker-article{width:33%;display:inline-block}
+.Speaker-contentAvatar{text-align:center;}
+.Speaker-contentAvatar:hover{cursor:pointer}
+.Speaker-contentAvatar:hover .Speaker-avatar{-webkit-box-shadow:1px 1px 5px #666;box-shadow:1px 1px 5px #666}
+.Speaker-avatar,.Speaker-cardAvatar{width:10em;height:10em;background:#ddd;-webkit-border-radius:50%;border-radius:50%;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;transition:0.5s all ease}
+.Speaker-card{background:#fff;position:absolute;top:0;padding:1.5em;width:30em;-webkit-border-radius:3px;border-radius:3px;border:3px solid #999;z-index:3;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);left:-100%;-webkit-box-shadow:inset 0 -1px 5px #666;box-shadow:inset 0 -1px 5px #666}
+.Speaker-cardAvatar{width:5em;height:5em;margin-right:1em;float:left}
+.Speaker-cardName{margin-bottom:0;padding-bottom:.2em;border-bottom:1px solid #ddd}
+.Speaker-cardDescription{font-family:'Droid Serif';margin:2em 0 0 0;font-size:.9em;font-style:italic}
+.Footer{background:#fff;margin:1em 0 0 0;bottom:0;height:10em;text-align:center;-webkit-box-shadow:0 -1px 5px #aaa;box-shadow:0 -1px 5px #aaa}
+.Footer-content{position:relative;width:95%;margin:0 auto}
+.Footer-listOrganizer{position:absolute;margin:.5em 0 0 0;padding:0}
+.Footer-listSponsor{top:0;right:0;position:absolute;margin:.5em 0 0 0;padding:0}
+.Footer-titleOrganizer,.Footer-titleSponsor{margin:0;margin-bottom:.5em}
+.Footer-organizerItem,.Footer-sponsorItem{display:inline-block;margin:0 1em}
+.Footer-linkOrganizer,.Footer-linkSponsor{text-decoration:none}
+.Footer-logo{width:5em;vertical-align:middle}
+.Footer-logo[src="img/acopterfar.png"]{width:9em}
+.Footer-logo[src="img/humax.png"]{width:9em;margin-top:1em}
+.Footer-message{padding:4em 0 0 0;display:block}
+.Footer-developer{margin:0;padding-bottom:1em}
+.Footer-developer a{color:#329036;}
+.Footer-developer a:hover{color:#006400}

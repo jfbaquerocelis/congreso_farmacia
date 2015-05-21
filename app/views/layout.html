@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es	">
+{% block head %}
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="III congreso internacional de Tecnología en Regencia de Farmacia" />
+	<meta name="keywords" content="acopterfar, regencia de farmacia, farmacia, asociación, acopterfar.org, congreso" />
+	<meta name="author" content="John Baquero Celis y Alvaro Javier Pajaro" />
+	<title>III Congreso Internacional de Tecnología en Regencia de Farmacia</title>
+	<link type="image/x-icon" href="img/pillicon.png" rel="icon" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/vendor/normalize.css" />
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+{% endblock %}
+<body>
+	<div class="overlay"></div>
+	<header class="Header">
+		<nav class="Menu">
+			<ul class="Menu-list">
+				<li class="Menu-listItem"><a href="/" class="Menu-linkItem">INICIO</a></li>
+				<li class="Menu-listItem"><a href="/humax" class="Menu-linkItem">PREMIOS HUMAX</a></li>
+				<li class="Menu-listItem"><a href="/hotel" class="Menu-linkItem">OFERTA HOTELERA</a></li>
+				<li style="display : none" class="Menu-listItem"><a href="/cvlac" class="Menu-linkItem">CvLac CONFERENCISTAS</a></li>
+				<li class="Menu-listItem"><a href="/contact" class="Menu-linkItem">CONTACTO</a></li>
+			</ul>
+		</nav>
+		<div class="Header-contentText">
+			<h1 class="Header-iii">III<span class="Header-congress">CONGRESO</span></h1>
+			<h3 class="Header-rest">Internacional de Tecnología en Regencia de Farmacia</h3>
+			<h3 class="Header-subtitle"><em>"La seguridad del paciente, un compromiso de todos"</em></h3>
+			<p class="Header-info">14 y 15 de Noviembre 2015. Centro Cultural y de Convenciones</p>
+			<p class="Header-info">Montería - Córdoba</p>
+		</div>
+	</header>
+	
+	{% block content %}
+	{% endblock %}
+
+	<footer class="Footer">
+		<div class="Footer-content">
+			<ul class="Footer-listOrganizer">
+				<h3 class="Footer-titleOrganizer">Organizadores</h3>
+				<li class="Footer-organizerItem">
+					<a href="http://www.unicordoba.edu.co/" target="_blank" class="Footer-linkOrganizer">
+						<img src="img/unicordoba.png" alt="" class="Footer-logo">
+					</a>
+				</li>
+				<li class="Footer-organizerItem">
+					<a href="http://www.acopterfar.org/" target="_blank" class="Footer-linkOrganizer">
+						<img src="img/acopterfar.png" alt="" class="Footer-logo">
+					</a>
+				</li>
+				<li class="Footer-organizerItem">
+					<a href="" target="_blank" class="Footer-linkOrganizer">
+						<img src="img/aserfarcor.jpg" alt="" class="Footer-logo">
+					</a>
+				</li>
+			</ul>
+			<em class="Footer-message">¡Te Esperamos!</em>
+			<p class="Footer-developer">Developed By <a href="http://www.twitter.com/noverflow" target="_blank" class="team">John Baquero Celis</a> and <a href="http://www.twitter.com/alvaropajarof" target="_blank" class="team">Alvaro Pajaro Fernandez</a></p>
+			<ul class="Footer-listSponsor">
+				<h3 class="Footer-titleSponsor">Patrocinador</h3>
+				<li class="Footer-sponsorItem">
+					<a href="http://www.humax.com.co/" target="_blank" class="Footer-linkSponsor">
+						<img src="img/humax.png" alt="" class="Footer-logo">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	{% block footer %}
+		<script src="js/vendor/jquery-2.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="js/vendor/signals.min.js"></script>
+		<script src="js/vendor/crossroads.min.js"></script>
+		<script src="js/vendor/hasher.min.js"></script>
+		<script src="js/congreso.js"></script>
+	{% endblock %}
+</body>
+</html>
