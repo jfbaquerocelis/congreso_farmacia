@@ -5,21 +5,6 @@ Blue = #09126D
 Green = #C5E1A5
 darkGreen = #329036
 
-@font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-iht9o3');
-	src:url('../fonts/icomoon.eot?#iefix-iht9o3') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-iht9o3') format('woff'),
-		url('../fonts/icomoon.ttf?-iht9o3') format('truetype'),
-		url('../fonts/icomoon.svg?-iht9o3#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/*UI Components*/
-.link-active
-	background red
-
 body
 	font-family 'Droid Serif'
 	color #333
@@ -141,69 +126,29 @@ body
 	margin 0
 	padding 0
 	text-align center
+	text-decoration none
+	font-family 'Open Sans'
 .Congress-listItem
 	display inline-block
 .Congress-linkItem
-	padding 0.5em 1em
 	color #333
+	background #63b5ed
 	display block
-	margin 1em 0
+	margin 1em .5em
+	border-radius 5px
+	border-bottom 5px solid #52a4dc
+	transition .3s all ease
+	font-size 1.1em
 	&:hover
+		transform scale(.98, .98)
 		text-decoration none
-.calendar
-.place
-.price
-	margin .5em
-	cursor pointer
-	font-size 2em
-	transition .3s all ease
-.calendar
-	&:hover
-		transform rotate(-10deg)
-		color #EF5350
-	&:hover ~ p
-		color #EF5350
-.place
-	&:hover
-		transform rotate(-10deg)
-		color #EF6C00
-	&:hover ~ p
-		color #EF6C00
-.price
-	&:hover
-		transform rotate(-10deg)
-		color #43A047
-	&:hover ~ p
-		color #43A047
-.calendar:before
-	font-size 2em
-	font-family 'icomoon'
-	content "\e953"
-	margin 0 .2em
-.place:before
-	font-size 2em
-	margin 0 .2em
-	font-family 'icomoon'
-	content "\e948"
-.price:before
-	font-size 2em
-	margin 0 .2em
-	font-family 'icomoon'
-	content "\e93b"
-.pencil
-	font-size 3.5em
-	transition .3s all ease
-	&:hover
-		transform rotate(10deg)
-		color #FFD600
-	&:hover ~ p
-		color #FFD600
-.hotel
-	font-size 3.5em
-	transition .3s all ease
-	&:hover
-		transform rotate(-10deg)
-
+		border-bottom 3px solid #52a4dc
+	& p
+		color white
+		font-weight bold
+		margin 0
+		padding .5em 1.2em
+			
 #calendar
 #place
 #price

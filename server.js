@@ -5,9 +5,10 @@ var express = require('express'),
 server = express();
 router = express.Router();
 
-// swig.setDefaults({
-// 	cache : false
-// });
+swig.setDefaults({
+	cache : false
+});
+
 server.engine('html', swig.renderFile);
 server.set('view engine', 'html');
 server.set('views', './app/views');
