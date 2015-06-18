@@ -6,7 +6,7 @@ server = express();
 router = express.Router();
 
 swig.setDefaults({
-	cache : false
+	cache : 'memory'
 });
 
 server.engine('html', swig.renderFile);
