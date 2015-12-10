@@ -22,11 +22,13 @@ var humaxRouter = require('./app/routers/r.humax')
 var hotelRouter = require('./app/routers/r.hotel')
 var cvlacRouter = require('./app/routers/r.cvlac')
 var contactRouter = require('./app/routers/r.contact')
+var slidesRouter = require('./app/routers/r.slides')
 homeRouter(router)
 humaxRouter(router)
 hotelRouter(router)
 cvlacRouter(router)
 contactRouter(router)
+slidesRouter(router)
 
 server.listen(25115, function () {
 	console.log('Server running in -> http://localhost:25115');
